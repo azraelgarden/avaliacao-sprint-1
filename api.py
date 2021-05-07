@@ -7,9 +7,9 @@ class showUserInfo():
         self._usuario = usuario
 
     
-    def request(self):
+    def __request(self):
         response = requests.get(
-            f'https://api.github.com/users/{self._usuario}/repos'
+            f'https://api.github.com/users/{self._usuario}'
         )
         if response.status_code == 200:
             return response.json()
@@ -17,14 +17,11 @@ class showUserInfo():
             return response.status_code
     
 
-    def return_repositories(self):
-        datas = self.request()
-        if type(datas) is not int:
-            for i in range(len(datas)):
-                print(datas[i]['name'])
-        else:
-            print(datas)
+    @property
+    def show_info(self):
+        print(self.__request())
 
 
-repositorios = showUserInfo('whoisfreire')
-repositorios.return_repositories()
+    def return_info(self):
+        return self.__request()
+        
