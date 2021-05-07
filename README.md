@@ -8,6 +8,6 @@
 
 ## Entrega
 - Aceitar o invite do repositório da avaliacao-sp-1;
-- Criar uma branch no repositório;
-- Subir o desafio no repositório com um readme.md, explicando sobre o que foi utilizado no desafio.
+- Criar uma branch no repositório com nome avalicao-nome-sobrenome (Exemplo: avaliacao-azrael-garden);
+- Subir o desafio na branch com um readme.md, explicando sobre o que foi utilizado no desafio.
 - Subir o desafio até às 13h do dia 10/05 no repositório do github (https://github.com/AzraelGarden/avaliacao-sprint-1/).
