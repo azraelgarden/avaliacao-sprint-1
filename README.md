@@ -1,15 +1,25 @@
 # Avaliação Sprint 1
 
-## Execução
-- Escolher uma API pública (https://any-api.com/, ou qualquer outra);
-- Consumir essa API através do Python;
-- Armazenar os dados no Mongo;
-- Consumir os dados armazenados, exibindo-os a partir do Mongo para o usuário.
+## Salvando usuarios a partir da API do github
+Nesse Projeto foi utilizado algumas libs para o desenvolvimento do mesmo:
 
-## Entrega
-- Aceitar o invite do repositório da avaliacao-sp-1;
-- Criar uma branch no repositório com nome avalicao-nome-sobrenome (Exemplo: avaliacao-azrael-garden);
-- Subir o desafio na branch com um readme.md, explicando sobre o que foi utilizado no desafio.
-- Subir o desafio até às 13h do dia 10/05 no repositório do github (https://github.com/AzraelGarden/avaliacao-sprint-1/).
+- pymongo
+- requests
+- pprint
+- json
 
-Link do Excel para colocar a API Utilizada: https://compasso-my.sharepoint.com/:x:/g/personal/azrael_nogueira_compasso_com_br/Efa7mhUFNCZIgarlLc1QdxABf7nnx3vtnmDLL00pRPG64w?e=mPx1oe
+
+### pymongo
+O pymongo foi utilizado para poder estabelecer uma conexão com o banco de dados mongoDB e poder manipular a coleção
+
+### requests
+Requests foi utilizado para fazer a requisição para API e retornar as informações de resposta 
+
+### JSON
+A lib JSON foi utilizada para poder pegar essa resposta da API e transforma-la em JSON
+
+### PPRINT
+Já o pprint foi utilizado para consumir os dados armazenados no banco, mostrando ao usuario todas as informações salvar no mesmo
+
+
+Leonardo Freire Russi
