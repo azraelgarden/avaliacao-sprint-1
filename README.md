@@ -1,5 +1,5 @@
 # Avaliação Sprint 1
-<p align="center"><img style="width: 900px; height: 550px; background: url(https://live.staticflickr.com/1951/30234801997_86f8232201_b.jpg) center bottom; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background=size: cover;"></p>
+<p align="center"><img src = "https://live.staticflickr.com/1951/30234801997_86f8232201_b.jpg"></p>
 
 ## 🚀 SPACEX API - Dados dos foguetes
 - Todos os dados serão capturados através da API da [SpaceX](https://www.spacex.com/);
