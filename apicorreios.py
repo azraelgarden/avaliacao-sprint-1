@@ -78,7 +78,7 @@ try:
       
     app = Flask(__name__)
 
-    @app.route("/")
+    @app.route("/json")
     def json_api():
       pessoas = [
         {"Nome": nome},
@@ -93,11 +93,9 @@ try:
       response = make_response(json.dumps(pessoas))
       response.content_type = "application/json"
       return response
-    @app.route("/resultado")
+    @app.route("/")
     def retornohtml():
-      return (f"<h1> Buscando CEP </h1> <hr> <br> <h3> Nome: {nome} <br> Endereço: {endereco['logradouro']} <br> Numero: {numero} <br> Complemento: {complemento} <br> Referência: {referencia} <br> Bairro: {endereco['bairro']} <br> Cidade: {endereco['localidade']} <br> Estado: {endereco['uf']} <br> </h3>")
-
-      print(RED + "http://127.0.0.1:5000/resultado" + RESET)
+      return (f"<h1> Buscando CEP </h1> <hr> <br> <h3> Nome: {nome} <br> Endereço: {endereco['logradouro']} <br> Numero: {numero} <br> Complemento: {complemento} <br> Referência: {referencia} <br> Bairro: {endereco['bairro']} <br> Cidade: {endereco['localidade']} <br> Estado: {endereco['uf']} <br> </h3> <a href='http://127.0.0.1:5000/json'>JSON</a>")
     app.run()
         
 
