@@ -1,15 +1,19 @@
 # Avaliação Sprint 1
 
-## Execução
-- Escolher uma API pública (https://any-api.com/, ou qualquer outra);
-- Consumir essa API através do Python;
-- Armazenar os dados no Mongo;
-- Consumir os dados armazenados, exibindo-os a partir do Mongo para o usuário.
+## Descrição do projeto
+A proposta do projeto é capturar os dados através de uma API da covid19, utilizando Python, inserir no banco MongoDB, e apresentar essa consulta
 
-## Entrega
-- Aceitar o invite do repositório da avaliacao-sp-1;
-- Criar uma branch no repositório com nome avalicao-nome-sobrenome (Exemplo: avaliacao-azrael-garden);
-- Subir o desafio na branch com um readme.md, explicando sobre o que foi utilizado no desafio.
-- Subir o desafio até às 13h do dia 10/05 no repositório do github (https://github.com/AzraelGarden/avaliacao-sprint-1/).
+## Tecnologias 
+- Python3
+- MongoDB
+- API Covid19 – Pais Brasil
 
-Link do Excel para colocar a API Utilizada: https://compasso-my.sharepoint.com/:x:/g/personal/azrael_nogueira_compasso_com_br/Efa7mhUFNCZIgarlLc1QdxABf7nnx3vtnmDLL00pRPG64w?e=mPx1oe
+## Fluxo de trabalho
+ - Extrair os dados da API
+- Inserir no banco MongoDB
+- Visualizar esses dados no Python3
+
+
+## Autor
+
+ <b>[Joice Gonçalves Furigo](https://github.com/vicpb)</b>
