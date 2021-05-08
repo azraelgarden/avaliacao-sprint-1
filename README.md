@@ -1,15 +1,11 @@
-# Avaliação Sprint 1
+  
+desafio1_compassoUol
+Desafio de consumir API e integrar com MongoDB
 
-## Execução
-- Escolher uma API pública (https://any-api.com/, ou qualquer outra);
-- Consumir essa API através do Python;
-- Armazenar os dados no Mongo;
-- Consumir os dados armazenados, exibindo-os a partir do Mongo para o usuário.
+Utilizei a bilbioteca de pymongo para utilizar o mongodb. Também utilizei a biblioteca requests para integração e requisição da API. API escolhida foi 'swapi' https://swapi.dev/ ,sendo uma API de Star Wars
 
-## Entrega
-- Aceitar o invite do repositório da avaliacao-sp-1;
-- Criar uma branch no repositório com nome avalicao-nome-sobrenome (Exemplo: avaliacao-azrael-garden);
-- Subir o desafio na branch com um readme.md, explicando sobre o que foi utilizado no desafio.
-- Subir o desafio até às 13h do dia 10/05 no repositório do github (https://github.com/AzraelGarden/avaliacao-sprint-1/).
+O sistema funciona gerando um menu de opções para definir qual a categoria da API será verificada. Depois da escolha, é perguntado qual o ID da categoria deverá ser acessado. Só então, será perguntado se o escolhido deverá subir ao mongodb para uma database de favoritos.
 
-Link do Excel para colocar a API Utilizada: https://compasso-my.sharepoint.com/:x:/g/personal/azrael_nogueira_compasso_com_br/Efa7mhUFNCZIgarlLc1QdxABf7nnx3vtnmDLL00pRPG64w?e=mPx1oe
+Também pe possível a consulta do que já foi inserido no banco.
+
+Como melhorias: Inclusão de listas na DB, pois nesta versão não será possível incluir mais de um dado de escolha por ID. Melhorias na interface para ficar mais amigável e intuitivo ao usuário.
