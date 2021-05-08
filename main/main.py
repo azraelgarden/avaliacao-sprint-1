@@ -7,6 +7,7 @@ collection = "rockets"
 url = "https://api.spacexdata.com/v4/rockets"
 
 API = Api()
-lista = API.retornaLista(url)
 db = Database(hostname, banco, collection)
+
+lista = API.retornaLista(url)
 db.inserirVariosRegistros(lista)
