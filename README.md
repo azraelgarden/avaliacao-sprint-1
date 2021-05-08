@@ -1,15 +1,20 @@
 # Avaliação Sprint 1
 
-## Execução
-- Escolher uma API pública (https://any-api.com/, ou qualquer outra);
-- Consumir essa API através do Python;
+## Descrição do projeto
+A proposta do projeto é capturar os dados através de uma API da Farmácia Popular Brasil, do site saude.gov , utilizando Python, inserir no banco MongoDB, e apresentar essa consulta.
+
+## Tecnologias 
+- Python3
+- MongoDB
+- API Farmácia Popular – Gov Pais Brasil
+
+## Fluxo de trabalho
+- Escolher uma API Aberta;
+- Consumir essa API através do Python pelo Visual Code;
 - Armazenar os dados no Mongo;
 - Consumir os dados armazenados, exibindo-os a partir do Mongo para o usuário.
 
-## Entrega
-- Aceitar o invite do repositório da avaliacao-sp-1;
-- Criar uma branch no repositório com nome avalicao-nome-sobrenome (Exemplo: avaliacao-azrael-garden);
-- Subir o desafio na branch com um readme.md, explicando sobre o que foi utilizado no desafio.
-- Subir o desafio até às 13h do dia 10/05 no repositório do github (https://github.com/AzraelGarden/avaliacao-sprint-1/).
+## Autor
 
-Link do Excel para colocar a API Utilizada: https://compasso-my.sharepoint.com/:x:/g/personal/azrael_nogueira_compasso_com_br/Efa7mhUFNCZIgarlLc1QdxABf7nnx3vtnmDLL00pRPG64w?e=mPx1oe
+ <b>[Vanessa Amelia Rotoli ](https://github.com/vicpb)</b>
+
