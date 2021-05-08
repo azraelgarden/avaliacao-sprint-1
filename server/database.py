@@ -20,4 +20,4 @@ class Mongobase:
 
     def showAll(self):
         for user in self._collection.find():
-            print(user)
+            pprint(user)
