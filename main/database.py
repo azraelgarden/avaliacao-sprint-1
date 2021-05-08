@@ -1,13 +1,14 @@
-class Databasecontroller:
+import pymongo
 
-    def __init__(self, hostname, client, database):
+class Database:
+
+    def __init__(self, hostname, db, collection):
         self.__hostname = hostname
-        self.__client = client
-        self.__database = database
+        self.__db = db
+        self.__mycollection = collection
+        self.myclient = pymongo.MongoClient(self.__hostname)
+        mydb = self.myclient[self.__db]
+        self.__mycollection = mydb[self.__mycollection]
 
-    def configurar(self):
-        import pymongo
-        myclient = pymongo.MongoClient(self.__hostname)
-        mydb = myclient[self.__client]
-        mycol = mydb[self.__database]
-
+    def inserirVariosRegistros(self, query):
+        self.__mycollection.insert_many(query)
