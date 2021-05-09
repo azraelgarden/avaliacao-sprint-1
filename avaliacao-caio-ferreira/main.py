@@ -1,43 +1,65 @@
-#Fazer a importação do MongoClient da lib pymongo
 from pymongo import MongoClient
-#importar o requests
 import requests
-#importar o json
 import json
-from config import apiKey
+from configparser import ConfigParser
+
+config = ConfigParser()
+config.read('config.ini')
+
 #O mongo por padrão esta conectado na porta 27017
 client = MongoClient('localhost', 27017)
 db = client.YoutubeResultados
 
-#Habilitando a chave da API do youtube e armazenando em uma variavel
-#A minha chave está armazenada no arquivo config.py, e esse arquivo está sendo ignorado pelo git.
-key = apiKey
+def mostrarResultado(video):
+    print('Título: ' + video['TituloDoVideo'])
+    print('Descrição: ' + video['Descricao'])
+    print('Título do canal: ' + video['Canal'])
+    print('Url: https://www.youtube.com/watch?v=' + video['VideoId'])
+    print('================================================================================')
+
 pesquisar = str(input('Qual sua pesquisa?: '))
 
-
-resultadoDoBanco = db.resultados.find({'cacheKey': pesquisar})
 #Checando se no banco de dados existe um chave de cache igual, caso sim
 #retorna os itens do banco, caso contrário, busca da API e joga no banco
-if resultadoDoBanco.count() > 0:
+if db.resultados.count_documents({'CacheKey': pesquisar}) > 0:
+    
+    print('Essa pesquisa já existe na nossa cache!')
+    print('Lista de vídeos encontrados: ')
+    resultadoDoBanco = db.resultados.find({'CacheKey': pesquisar})
+    
     for item in resultadoDoBanco:
-        print(item)
+        mostrarResultado(item)
         
 else: 
+    
+    params = {
+        'key': config['YOUTUBE_API']['apiKey'], 
+        'part': 'snippet', 
+        'q': pesquisar,
+        'type' : 'video'
+    }
+    
     request = requests.get(
-        'https://www.googleapis.com/youtube/v3/search', 
-        params={'key': key, 'part': 'snippet', 'q': pesquisar}).json()
+        config['YOUTUBE_API']['url'], 
+        params=params
+    ).json()
+    
+    print('Dados buscado direto da API do Google!')
+    print('Lista de vídeos encontrados: ')
+    
     for item in request['items']:
         
-        db.resultados.insert_many(
-            [
-                {
-                    'cacheKey': pesquisar,
-                    'Thumbnail' : item['snippet']['thumbnails']['default']['url'],
-                    'TituloDoVideo' : item['snippet']['title'],
-                    'Descricao' : item['snippet']['description'],
-                    'TituloDoCanal' : item['snippet']['channelTitle']
-                        
-                }
-            ]
-        )
-        print(item)
+        video = {
+            'CacheKey': pesquisar,
+            #Em uma aplicação web pode ser usada a thumbnail
+            'Canal' : item['snippet']['channelTitle'],
+            'VideoId' : item['id']['videoId'],
+            'Thumbnail' : item['snippet']['thumbnails']['default']['url'],
+            'TituloDoVideo' : item['snippet']['title'],
+            'Descricao' : item['snippet']['description']
+        }
+
+        db.resultados.insert_one(video)
+        mostrarResultado(video)
+        
+        
