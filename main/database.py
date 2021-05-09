@@ -22,14 +22,14 @@ class Database:
     def acharUm(self, query):
         return self.__mycollection.find_one(query)
 
-    def acharUmSemQuery(self):
+    #def acharUmSemQuery(self):
         return self.__mycollection.find_one({})
 
-    def acharVarios(self, query):
+    #def acharVarios(self, query):
         return self.__mycollection.find(query)
     
     def acharVariosSemQuery(self):
         return self.__mycollection.find({})
 
-    def acharUmPorCollection(self, collection, query):
+    #def acharUmPorCollection(self, collection, query):
         return collection.find(query)
