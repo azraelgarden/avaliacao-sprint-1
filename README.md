@@ -4,7 +4,6 @@
 ## 🚀 SPACEX API - Dados dos foguetes
 - Todos os dados serão capturados através da API da [SpaceX](https://www.spacex.com/);
 - [GitHub da SpaceX](https://github.com/r-spacex/SpaceX-API) com a documentação;
-- [Access Point - Get](https://api.spacexdata.com/v4/rockets) dos foguetes;
 
 ## 🗒 Descrição do projeto
 A ideia deste projeto é capturar os dados através de uma API da SpaceX, utilizando Python e OOP, inserir no banco MongoDB, e fazer uma consulta inteligente.
@@ -19,8 +18,19 @@ A ideia deste projeto é capturar os dados através de uma API da SpaceX, utiliz
 - 2. Inserir no banco MongoDB
 - 3. Visualizar esses dados no Python3
 
-## 📁 Classes
-- Adicionarei posteriormente mais informações aqui.
+## 📁 Classes e funções
+- **Database**:
+-- configurar database - __init __(self, hostname, db)
+-- criar collection - criarCollection(self, collection)
+-- inserir um registro - inserirUmRegistro(self, query)
+-- inserir vários registros - inserirVariosRegistros(self, query)
+-- achar um registro - acharUm(self, query)
+-- achar vários registros - acharVariosSemQuery(self)
+- **API**:
+-- configurar API - __init __(self)
+-- retornar lista com informações da API - retornaLista(self, url)
+
+
 
 ## 📣 Disclaimer
 - Não estarei utilizando a biblioteca SpaceX-Py para produzir os requests!

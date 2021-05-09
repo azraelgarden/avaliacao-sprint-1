@@ -21,15 +21,15 @@ class Database:
     
     def acharUm(self, query):
         return self.__mycollection.find_one(query)
-
-    #def acharUmSemQuery(self):
-        return self.__mycollection.find_one({})
-
-    #def acharVarios(self, query):
-        return self.__mycollection.find(query)
     
     def acharVariosSemQuery(self):
         return self.__mycollection.find({})
 
+    #def acharUmSemQuery(self):
+        #return self.__mycollection.find_one({})
+
+    #def acharVarios(self, query):
+        #return self.__mycollection.find(query)
+
     #def acharUmPorCollection(self, collection, query):
-        return collection.find(query)
+        #return collection.find(query)
