@@ -8,6 +8,24 @@
 ## 🗒 Descrição do projeto
 A ideia deste projeto é capturar os dados através de uma API da SpaceX, utilizando Python e OOP, inserir no banco MongoDB, e fazer uma consulta inteligente.
 
+## 🔎 Consultas feitas
+- Nome da empresa
+- Fundador da empresa
+- Ano de nascimento da empresa
+- Valor da empresa
+- Localização da empresa
+- Porcentagem de lançamentos bem sucedidos
+- O launchpad mais utilizado
+- A localidade do launchpad mais utilizado
+- O percentual de utilização do launchpad
+- Nome dos foguetes
+- Custos dos foguetes
+- Nome dos foguetes versus Custos dos foguetes
+- Tipo do motor dos foguetes
+- Layout dos motores
+- Custo por Voo versus Quantidade de combustível
+- Custo por Voo versus Peso da Dragon2
+
 ## 🛠 Tecnologias 
 - Python3
 - MongoDB
