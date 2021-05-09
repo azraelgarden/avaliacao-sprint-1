@@ -19,16 +19,16 @@ A ideia deste projeto é capturar os dados através de uma API da SpaceX, utiliz
 - 3. Visualizar esses dados no Python3
 
 ## 📁 Classes e funções
-- **Database**:
--- configurar database - __init __(self, hostname, db)
--- criar collection - criarCollection(self, collection)
--- inserir um registro - inserirUmRegistro(self, query)
--- inserir vários registros - inserirVariosRegistros(self, query)
--- achar um registro - acharUm(self, query)
--- achar vários registros - acharVariosSemQuery(self)
-- **API**:
--- configurar API - __init __(self)
--- retornar lista com informações da API - retornaLista(self, url)
+- **Database**: <br>
+-- configurar database - __init __(self, hostname, db) <br>
+-- criar collection - criarCollection(self, collection) <br>
+-- inserir um registro - inserirUmRegistro(self, query) <br>
+-- inserir vários registros - inserirVariosRegistros(self, query) <br>
+-- achar um registro - acharUm(self, query) <br>
+-- achar vários registros - acharVariosSemQuery(self) <br>
+- **API**: <br>
+-- configurar API - __init __(self) <br>
+-- retornar lista com informações da API - retornaLista(self, url) <br>
 
 
 
