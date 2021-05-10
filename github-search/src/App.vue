@@ -2,7 +2,10 @@
   <div class='container'>
     <input type="text" v-model="username" >
     <button @click="submit">search</button>
-    <p>{{result}}</p>
+    <p>username:{{result.login}}</p>
+    <p>Name:{{result.name}}</p>
+    <p>Public Repos:{{result['public_repos']}}</p>
+
   </div>
 </template>
 
@@ -12,10 +15,10 @@
   export default {
     methods: {
       submit() {
-        console.log(this.text)
         const api = axios.create({baseURL:'http://localhost:3000'})
         api.get(this.username).then((result)=>{
-          this.result = JSON.stringify(result)
+          console.log(result)
+          this.result = result.data
         }).catch(console.log)
       }
     },
