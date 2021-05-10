@@ -5,7 +5,6 @@ from pymongo import MongoClient
 client = MongoClient("mongodb://localhost:27017/")
 db = client.trabalhoAvaliativo
 
-
 # Caso queira testar algum ip, estes sao válidos
 # 24.55.21.33, 2606:4700:10::6816:3866, 15.44.56.9, 43.27.4.8
 # 52.211.131.50, 13.94.143.57, 12.53.21.2, 32.12.66.4, 77.54.25.3
@@ -67,10 +66,10 @@ O que deseja ver sobre ele?
             if opcao == 1:
                 print('''
 -=-=-=-=-=-=-=-=-=-
-Cidade: {}, Estado: {}, País: {}, Capital: {}, Bandeira do País: {}
+Cidade: {}, Estado: {}, País: {}, Capital: {}, Continente: {},  Bandeira do País: {}
 -=-=-=-=-=-=-=-=-=-'''
                       .format(ipgeolocation["city"], ipgeolocation["region"], ipgeolocation["country"],
-                              ipgeolocation["country_capital"], ipgeolocation["country_flag"]))
+                              ipgeolocation["country_capital"], ipgeolocation["continent"],ipgeolocation["country_flag"]))
 
             elif opcao == 2:
                 print('''
@@ -117,13 +116,6 @@ Latitude: {}, Longitude: {}, Moeda: {}, Codigo: {}, Símbolo: {}, Plural: {}.
 Opção invalida
 -=-=-=-=-=-=-=-=-=-
             ''')
-
-
-
-
-
-
-
 
 if True:
     get_ip()
