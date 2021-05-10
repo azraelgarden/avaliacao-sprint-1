@@ -18,6 +18,7 @@
 - Acesso e conexão em API simples e pública
 - Atribuição de conteúdo obtido pelo consumo da API a variavel
 - Acesso a base de dados MongoDB local, com gravação de dados
+- Apresentação de todos os dados da base de dados na tela da aplicação
 
 ## Lições aprendidas
 - Sempre se atentar a instalar bibliotecas do Python no ambiente virtual correto
