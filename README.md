@@ -6,12 +6,12 @@
 - O valor da variável (o fato) é enviado para uma base de dados local MongoDB, que passa a ser alimentado com os "fatos" a cada execução do script
 - Por fim, a aplicação exibe em tela todos os "fatos" lidos e armazenados na base de dados
 
-## Recursos técnicos
+## Recursos técnicos utilizados
 - Linguagem Python fazendo uso das seguintes bibliotecas:
   - Requests: Acessar e consumir dados de API's
   - Json: Transmitir dados entre servidores e aplicações, baseado em Java Script
   - Pymongo: Interagir com bases de dados hospedadas em MongoDB
-  - MongoDB: Gerenciador de base de dados utilizado, instalado localmente
+- MongoDB: Gerenciador de base de dados utilizado, instalado localmente
 
 ## Entrega
 - Script simples, com boa interação com o usuário por meio de mensagens na tela
