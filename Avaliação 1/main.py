@@ -2,6 +2,10 @@ import requests
 import pymongo
 from monta_time import *
 
+pkm_client = pymongo.MongoClient("mongodb://localhost:27017/")
+pkm_db = pkm_client["pkm_Team_Database"]
+pkm_col = pkm_db["Teams"]
+
 print('Escolha uma opção')
 
 while True:
