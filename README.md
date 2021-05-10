@@ -24,3 +24,4 @@
 - Atentar se o banco de dados está hospedado em Cloud ou localmente, pois apesar da facilidade de se criar e hospedar o banco MongoDB na nuvem, a maioria dos tutoriais apresentam sintaxe para a conexão em base de dados local
 - Os principais tutoriais e demais fontes de conteúdo para o tema estão em lingua inglesa
 
+
