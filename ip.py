@@ -9,7 +9,6 @@ db = client.trabalhoAvaliativo
 # 24.55.21.33, 2606:4700:10::6816:3866, 15.44.56.9, 43.27.4.8
 # 52.211.131.50, 13.94.143.57, 12.53.21.2, 32.12.66.4, 77.54.25.3
 
-
 def get_ip():
     ip = input("Digite um IP: ")
     response = urllib2.urlopen("http://ipwhois.app/json/{}?lang=pt-BR".format(ip))
@@ -27,7 +26,6 @@ def get_ip():
     else:
         print("Esse IP não é válido! Tente novamente")
         get_ip()
-
 
 def jaVistos(ipgeolocation):
     print("Aqui estão os IPs já vistos: ")
