@@ -1,5 +1,8 @@
 # Avaliação Sprint 1
 
+![image](https://user-images.githubusercontent.com/72775959/117597899-ee4a9d00-b11c-11eb-9613-01f7d3d1cda9.png)
+
+
 ## Escopo
 - A aplicação acessa a API pública "Dog Facts" (https://kinduff.github.io/dog-api/), que possui "fatos" aleatórios sobre cães, por meio de um script Python
 - Após acessar a API, o "fato" apresentado será exibido na tela e armazenado em uma variável
