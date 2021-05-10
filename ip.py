@@ -56,8 +56,8 @@ O que deseja ver sobre ele?
 3...Moeda
 4...Tudo
 5...Novo IP
-6...Ips já 
-7...Para sair
+6...Ips já vistos
+7...Sair
 -=-=-=-=-=-=-=-=-=-'''.format(ipgeolocation["ip"]))
             opcao = int(input("Digite a opção: "))
 
