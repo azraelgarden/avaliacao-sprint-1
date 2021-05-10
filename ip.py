@@ -30,14 +30,9 @@ def get_ip():
         print("Esse IP não é válido! Tente novamente")
         get_ip()
 
-def historicoIP(ipgeolocation):
+def jaVistos():
 
-    contador = 1
-    historico= []
-    while contador != 0:
-        historico = [ipgeolocation["ip"]]
-        print(historico)
-        get_ip()
+
     pass
 
 def menu(ipgeolocation):
