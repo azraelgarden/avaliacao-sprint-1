@@ -7,6 +7,12 @@ Nesse Projeto foi utilizado algumas libs para o desenvolvimento do mesmo:
 - requests
 - pprint
 - json
+- VueJS
+- CORS
+- Express
+
+![frontend](https://user-images.githubusercontent.com/66642358/117690531-53d87100-b191-11eb-86f9-1c2dc9f73c0b.png)
+![Screenshot_2021-05-10_13-13-05](https://user-images.githubusercontent.com/66642358/117690695-82564c00-b191-11eb-95fc-7748b3f0a175.png)
 
 
 ### pymongo
@@ -21,5 +27,13 @@ A lib JSON foi utilizada para poder pegar essa resposta da API e transforma-la e
 ### PPRINT
 Já o pprint foi utilizado para consumir os dados armazenados no banco, mostrando ao usuario todas as informações salvar no mesmo
 
+### VueJS
+Foi utilizado para fazer a parte do frontend, recebendo as informacoes da api criada para se comunicar com o banco de dados
+
+### Express
+Utilizei para criar a rota de comunicação entre o banco e a aplicação
+
+### CORS
+Cors foi uma maneira de resolver o problema de conexao bloqueada pelo fato da requisição estar batendo em mais de uma rota, no caso a 3000 e a 27017
 
 Leonardo Freire Russi
